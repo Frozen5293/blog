@@ -1,16 +1,15 @@
 {
-  "name": "theme-vdoing-blog",
-  "version": "1.0.0",
+  "name": "frozen5293s_blog",
+  "version": "0.0.1",
   "scripts": {
-    "windev": "set NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
-    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider &&  node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
-    "linuxdev": "export NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
-    "linuxbuild": "export NODE_OPTIONS=--openssl-legacy-provider &&  node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
+    "win:dev": "set NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
+    "win:build": "set NODE_OPTIONS=--openssl-legacy-provider &&  node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
+    "win:deploy-gh": "yarn win:build && .\\deploy-gh",
+    "linux:dev": "export NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
+    "linux:build": "export NODE_OPTIONS=--openssl-legacy-provider &&  node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
     "predev": "vdoing",
     "prebuild": "vdoing",
-    "deploy-gh": "yarn docs:build &&  .\\deploy-gh",
     "editFm": "node utils/editFrontmatter.js",
-    "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
     "publish": "cd ./vdoing && npm publish && cd .. && yarn updateTheme",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D"
   },
