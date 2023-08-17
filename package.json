@@ -4,7 +4,7 @@
   "scripts": {
     "win:dev": "set NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
     "win:build": "set NODE_OPTIONS=--openssl-legacy-provider &&  node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
-    "win:deploy-gh": "yarn win:build && .\\deploy-gh.ps1",
+    "win:deploy-gh": "yarn win:build && powershell .\\deploy-gh.ps1",
     "linux:dev": "export NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
     "linux:build": "export NODE_OPTIONS=--openssl-legacy-provider &&  node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
     "predev": "vdoing",
