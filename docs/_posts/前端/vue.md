@@ -44,7 +44,7 @@ assert!(p.value===w===0)
 ## 暴露
 ```vue
 <scrip setup>
-let out=0;
+  let out=0;
 </scrip>
 <scrip>
 export default{
@@ -163,7 +163,7 @@ assert!(a===b);
 ```
 
 
-## 标签内容继承
+## 标签内容继承插槽
 
 ```vue
 <FancyButton>
@@ -174,12 +174,34 @@ assert!(a===b);
   <slot></slot>
 </button>
 
+
 // 此时 会渲染成
 
 <button class="fancy-btn">
   Click me!
 </button>
 
+```
+
+```vue
+
+<BaseLayout>
+  <template v-slot:header>
+    <!-- header 插槽的内容放这里 -->
+  </template>
+</BaseLayout>
+
+<div class="container">
+  <header>
+    <slot name="header"></slot>
+  </header>
+  <main>
+    <slot></slot>
+  </main>
+  <footer>
+    <slot name="footer"></slot>
+  </footer>
+</div>
 ```
 
 
@@ -255,4 +277,23 @@ const AdminPage = defineAsyncComponent(() =>
     <button @click="open = false">Close</button>
   </div>
 </Teleport>
+```
+
+
+### 动画
+
+\<Transition\>
+```vue
+
+```
+
+
+### 生命周期 
+```vue
+// 挂在
+onMounted()
+// dom树更新 
+onUpdated() 
+// 卸载
+onUnmounted() 
 ```
