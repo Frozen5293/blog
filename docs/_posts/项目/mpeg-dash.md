@@ -1,3 +1,16 @@
+---
+title: mpeg-dash
+date: 2024-03-30 00:54:28
+permalink: /pages/1fd96d/
+sidebar: auto
+categories:
+  - 随笔
+tags:
+  - 
+author: 
+  name: frozen5293
+  link: https://github.com/frozen5293
+---
 # MPEG-DASH
 
 我认为是一种文件的传输形式  

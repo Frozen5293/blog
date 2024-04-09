@@ -2,6 +2,7 @@
   "name": "frozen5293s_blog",
   "version": "0.0.1",
   "scripts": {
+    "win:upload":"git add * &&git commit -m \"upload\" && git push",
     "win:dev": "set NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
     "win:build": "set NODE_OPTIONS=--openssl-legacy-provider &&  node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
     "win:deploy-gh": "yarn win:build && powershell .\\deploy-gh.ps1",
@@ -18,6 +19,8 @@
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
     "vuepress": "1.9.9",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-fulltext-search": "^2.2.1",
@@ -28,5 +31,7 @@
     "vuepress-theme-vdoing": "^1.12.9",
     "yamljs": "^0.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vuepress-theme-vdoing": "^1.12.9"
+  }
 }
