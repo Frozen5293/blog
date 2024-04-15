@@ -8,9 +8,6 @@
     "win:deploy-gh": "yarn win:build && powershell .\\deploy-gh.ps1",
     "linux:dev": "export NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
     "linux:build": "export NODE_OPTIONS=--openssl-legacy-provider &&  node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
-    "predev": "vdoing",
-    "prebuild": "vdoing",
-    "publish": "cd ./vdoing && npm publish && cd .. && yarn updateTheme",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D"
   },
   "license": "MIT",
