@@ -4,9 +4,11 @@ date: 2023-10-25 20:58:49
 permalink: /pages/e60ee4/
 sidebar: auto
 categories:
-  - 随笔
+  - System
+  - GameDesign
 tags:
-  - 
+  - System
+  - GameDesign
 author: 
   name: frozen5293
   link: https://github.com/frozen5293

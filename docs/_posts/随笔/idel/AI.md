@@ -5,10 +5,12 @@ permalink: /pages/de557d/
 sidebar: auto
 categories:
   - AI
+  - System
 tags:
   - AI
   - Game
   - Development
+  - System
 author: 
   name: frozen5293
   link: https://github.com/frozen5293

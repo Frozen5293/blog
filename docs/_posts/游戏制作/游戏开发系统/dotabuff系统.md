@@ -4,8 +4,10 @@ date: 2023-09-26 21:05:33
 permalink: /pages/e68409/
 sidebar: auto
 categories:
-  - 随笔
+  - System
+  - GameDesign
 tags:
+  - GameDesign
   - buff
   - damage
   - boardcast

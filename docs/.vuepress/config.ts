@@ -32,11 +32,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '首页', link: '/'
       },
       {
-        text: '测试标题1',
+        text: '主线分类',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
-          { text: '测试1', link: '/note/javascript/' },
-          { text: '测试2', link: '/note/js/' },
+          { text: '游戏开发', link: '/gamedesignindex/' },
+          { text: '博客相关', link: '/config/' },
+          { text: '技术问题', link: '/qa/' }
         ],
       },
       {
@@ -51,7 +52,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         text: '更多',
         link: '/more/',
-        items: [{ text: '友情链接', link: '/friends/' },],
+        items: [
+          { text: '友情链接', link: '/friends/' },
+        ],
       },
       { text: '关于', link: '/about/' }
     ],
