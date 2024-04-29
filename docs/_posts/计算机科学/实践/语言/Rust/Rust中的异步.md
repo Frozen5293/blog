@@ -4,7 +4,6 @@ date: 2023-08-19 01:59:15
 permalink: /pages/e2fa0a/
 sidebar: auto
 categories:
-  - 语言
   - Rust  
 tags:
   - Rust

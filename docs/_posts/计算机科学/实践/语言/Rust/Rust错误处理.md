@@ -4,9 +4,10 @@ date: 2024-04-29 01:00:33
 permalink: /pages/rust/error/
 sidebar: auto
 categories:
-  - 随笔
+  - Rust
 tags:
-  - 
+  - Rust
+  - 错误处理
 author: 
   name: frozen5293
   link: https://github.com/frozen5293
