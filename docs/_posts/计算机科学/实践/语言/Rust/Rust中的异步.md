@@ -16,7 +16,7 @@ author:
 
 ### 对于Rust中异步的设计哲学（理念）？
 
-    Rust中提供了两个标记 ，分别是 async（异步) await(等待)
+    Rust中提供了两个标记 ，分别是 async（异步) .await(等待)
 
 ### 明确异步与多线程的区别
 
@@ -188,4 +188,6 @@ async fn load_file_2() {
 
 ### 解决方案
 
-    使用异步的std库来读取文件std-async
+    使用异步的std库来读取文件,std-async\
+### tokie结构
+    ![图片](/assets/rust_tokio.png tokio)
